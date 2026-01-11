@@ -6,7 +6,7 @@ import {
   UpdateNotes,
 } from "../controllers/notesController.js";
 
-const router = express.Router(); // one section of the app. --> route-handler object used to organize routes.
+const router = express.Router(); // one section of the app(routes). --> route-handler object used to organize routes.
 // const app = express(); this is the whole app
 
 router.get("/", getAllnotes);
