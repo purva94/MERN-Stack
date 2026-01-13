@@ -9,6 +9,10 @@ const app = express(); //Creates an Express application , this the whole applica
 const PORT = process.env.PORT || 5001;
 
 connectDB();
+
+//middleware
+app.use(express.json());
+
 app.use("/api/notes", notesRoutes);
 
 app.listen(PORT, () => {
